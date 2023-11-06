@@ -21,6 +21,10 @@ let package = Package(
                 "entities.inc",
                 "COPYING"
             ],
-            publicHeadersPath: "."),
+            publicHeadersPath: ".",
+            cSettings: [
+                .define("NDEBUG")
+            ]
+        ),
     ]
 )
